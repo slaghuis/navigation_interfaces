@@ -46,6 +46,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/LoadMap.srv"
   "srv/Reset.srv"
   "srv/SaveMap.srv"
+  "srv/Mission.srv"
   DEPENDENCIES builtin_interfaces geometry_msgs std_msgs action_msgs nav_msgs
 )
 

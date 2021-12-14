@@ -1,0 +1,8 @@
+# Security code to authenticate flight on a given drone
+int32 drone_code
+
+# Mission file
+string mission_file
+---
+# If the mission was accepted
+bool accepted
