@@ -1,0 +1,11 @@
+#goal definition
+float32 height   # Height above flight deck to set waypoints   
+float32 projected_area_w  
+float32 projected_area_h  
+geometry_msgs/Polygon area
+---
+#result definition
+geometry_msgs/PoseStamped[] poses
+builtin_interfaces/Duration planning_time
+---
+#feedback

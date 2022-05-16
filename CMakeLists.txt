@@ -27,25 +27,13 @@ find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "action/ComputePathToPose.action"
+  "action/ComputeCoveragePoses.action"
   "action/NavigateToPose.action"
+  "action/NavigateThroughPoses.action"
   "action/FollowWaypoints.action"
+  "action/FollowPath.action"
   "action/Spin.action"
   "action/Wait.action"
-  "msg/Aabb.msg"
-  "msg/BoundingVolume.msg"
-  "msg/Frustum.msg"
-  "msg/LineSegment.msg"
-  "msg/Obb.msg"
-  "msg/Plane.msg"
-  "msg/Point.msg"
-  "msg/Ray.msg"
-  "msg/Sphere.msg"
-  "msg/UfoMapMetaData.msg"
-  "msg/UfoMap.msg"
-  "msg/UfoMapStamped.msg"
-  "srv/LoadMap.srv"
-  "srv/Reset.srv"
-  "srv/SaveMap.srv"
   "srv/Mission.srv"
   DEPENDENCIES builtin_interfaces geometry_msgs std_msgs action_msgs nav_msgs
 )
